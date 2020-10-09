@@ -1,4 +1,5 @@
---  https://electronicstopper.blogspot.com/2017/07/t-flip-flop-in-vhdl-with-testbench.html
+-- author : Jake Foglia
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
@@ -16,7 +17,7 @@ ARCHITECTURE behavior OF ch13_1_tb IS
     END COMPONENT;
     
    signal D : std_logic := '0';
-   signal clk : std_logic := '0';
+   signal CLK : std_logic := '0';
    signal Q : std_logic := '0';
 
    constant clk_period : time := 10 ns;
@@ -48,6 +49,13 @@ BEGIN
   
   D <= '1';  
   wait for 50 ns;
+
+  D <= '0';
+  wait for 50 ns;
+  
+  D <= '1';  
+  wait for 50 ns;
+
 
   wait;
   end process;
