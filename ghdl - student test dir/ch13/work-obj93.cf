@@ -1,7 +1,0 @@
-v 4
-file . "ch13_2_tb.vhdl" "50a04a4c64f26e0a90c7afe1e7fadc462ff1609f" "20201009183717.321":
-  entity ch13_2_tb at 3( 27) + 0 on 13;
-  architecture behavior of ch13_2_tb at 9( 113) + 0 on 14;
-file . "ch13_2.vhdl" "107d316f0fb2b003111a4d2da6e9b4ad81516b0d" "20201009183717.295":
-  entity ch13_2 at 8( 229) + 0 on 11;
-  architecture behavioral of ch13_2 at 20( 432) + 0 on 12;
