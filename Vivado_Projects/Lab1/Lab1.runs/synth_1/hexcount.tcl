@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -101,6 +102,9 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 read_xdc D:/Git/foglia-DSD/Vivado_Projects/Lab1/Lab1.srcs/constrs_1/new/Hexcount.xdc
 set_property used_in_implementation false [get_files D:/Git/foglia-DSD/Vivado_Projects/Lab1/Lab1.srcs/constrs_1/new/Hexcount.xdc]
+
+read_xdc D:/Git/foglia-DSD/Vivado_Projects/Lab1/Lab1.srcs/constrs_1/new/leddec.xdc
+set_property used_in_implementation false [get_files D:/Git/foglia-DSD/Vivado_Projects/Lab1/Lab1.srcs/constrs_1/new/leddec.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

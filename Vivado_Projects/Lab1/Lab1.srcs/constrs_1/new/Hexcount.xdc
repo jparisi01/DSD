@@ -1,13 +1,16 @@
-# FPGA I/O Pin Locations
-NET "clk_50MHz" LOC = B8;
-NET "seg[0]" LOC = H14;
-NET "seg[1]" LOC = J17;
-NET "seg[2]" LOC = G14;
-NET "seg[3]" LOC = D16;
-NET "seg[4]" LOC = D17;
-NET "seg[5]" LOC = F18;
-NET "seg[6]" LOC = L18;
-NET "anode[0]" LOC = F17;
-NET "anode[1]" LOC = H17;
-NET "anode[2]" LOC = C18;
-NET "anode[3]" LOC = F15;
+#FPGA I/0 Locations
+
+set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clk_50MHz]
+
+set_property -dict {PACKAGE_PIN L18 IOSTANDARD LVCMOS33} [get_ports {seg[0]}]
+set_property -dict {PACKAGE_PIN T11 IOSTANDARD LVCMOS33} [get_ports {seg[1]}]
+set_property -dict {PACKAGE_PIN P15 IOSTANDARD LVCMOS33} [get_ports {seg[2]}]
+set_property -dict {PACKAGE_PIN K13 IOSTANDARD LVCMOS33} [get_ports {seg[3]}]
+set_property -dict {PACKAGE_PIN K16 IOSTANDARD LVCMOS33} [get_ports {seg[4]}]
+set_property -dict {PACKAGE_PIN R10 IOSTANDARD LVCMOS33} [get_ports {seg[5]}]
+set_property -dict {PACKAGE_PIN T10 IOSTANDARD LVCMOS33} [get_ports {seg[6]}]
+
+set_property -dict {PACKAGE_PIN U13 IOSTANDARD LVCMOS33} [get_ports {anode[0]}]
+set_property -dict {PACKAGE_PIN K2 IOSTANDARD LVCMOS33} [get_ports {anode[1]}]
+set_property -dict {PACKAGE_PIN T14 IOSTANDARD LVCMOS33} [get_ports {anode[2]}]
+set_property -dict {PACKAGE_PIN P14 IOSTANDARD LVCMOS33} [get_ports {anode[3]}]
