@@ -1,7 +1,7 @@
 # foglia-DSD
  Jake Foglia's ECE-487 repo
 
-# ghdl - test dir
+# GHDL Test Directory
  Includes various VHDL files with corresponding test benches. 
  Utilizes GTKWave to display results.
 
