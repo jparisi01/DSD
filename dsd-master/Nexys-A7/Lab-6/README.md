@@ -4,9 +4,13 @@
 
 * 2019-11-15 pull request by Peter Ho with the 800x600@60Hz support for 100MHz clock
 
-### 1. Create a new RTL project Pong in Vivado Quick Start
+### 1. Create a new RTL project pong in Vivado Quick Start
 
 * Create six new source files of file type VHDL called clk_wiz_0, clk_wiz_0_clk_wiz, vga_sync, bat_n_ball, adc_if, and pong
+
+  * clk_wiz_0.vhd and clk_wiz_0_clk_wiz.vhd are the same files as in Lab 3
+  
+  * vga_sync.vhd, bat_n_ball.vhd, adc_if.vhd, and pong.vhd are new files for Lab 6
 
 * Create a new constraint file of file type XDC called pong
 
@@ -51,4 +55,4 @@ starting width when missing the ball
 
 * See how many times hitting the ball in a row as the bat slowly shrinks
 
-* Count the number of successful hits after each serve and display the count in binary on the LEDs on the Nexys A7-100T board
+* Count the number of successful hits after each serve and display the count in binary on the 7-segment displays of the Nexys A7-100T board

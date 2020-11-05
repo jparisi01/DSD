@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 29 12:56:52 2020
+# Process ID: 15768
+# Current directory: D:/Git/foglia-DSD/Vivado_Projects/Lab5/Lab5.runs/synth_1
+# Command line: vivado.exe -log siren.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source siren.tcl
+# Log file: D:/Git/foglia-DSD/Vivado_Projects/Lab5/Lab5.runs/synth_1/siren.vds
+# Journal file: D:/Git/foglia-DSD/Vivado_Projects/Lab5/Lab5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source siren.tcl -notrace
