@@ -36,7 +36,6 @@ BEGIN
 	       "0111000" WHEN data4 = "1111" ELSE --F
 	       "1111111";
 	-- Turn on anode of 7-segment display addressed by 2-bit digit selector dig
-	-- modified to supress leading zeros
 	anode <= "1110" WHEN dig = "00" and data /= X"0000" ELSE -- digit 0
 	         "1101" WHEN dig = "01" and data(15 downto 4) /= X"000" ELSE -- digit 1
 	         "1011" WHEN dig = "10" and data(15 downto 8) /= X"00" ELSE -- digit 2
