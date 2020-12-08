@@ -15,7 +15,7 @@ ENTITY ball IS
 END ball;
 
 ARCHITECTURE Behavioral OF ball IS
-	CONSTANT size  : INTEGER := 16; -- modify ball size from 8
+	CONSTANT size  : INTEGER := 24; -- modified ball size, ball is 3x bigger
 	SIGNAL ball_on : STD_LOGIC; -- indicates whether ball is over current pixel position
 	-- current ball position - intitialized to center of screen
 	SIGNAL ball_x  : STD_LOGIC_VECTOR(10 DOWNTO 0) := CONV_STD_LOGIC_VECTOR(400, 11);
@@ -24,9 +24,9 @@ ARCHITECTURE Behavioral OF ball IS
 	SIGNAL ball_x_motion : STD_LOGIC_VECTOR(10 DOWNTO 0) := "00000000100";
 	SIGNAL ball_y_motion : STD_LOGIC_VECTOR(10 DOWNTO 0) := "00000000100";
 BEGIN
-	red <= '1'; -- color setup for red ball on white background
+	red <= NOT ball_on;
 	green <= NOT ball_on; 
-	blue  <= '1'; -- modify ball color from red to magenta
+	blue  <= '1'; -- modify ball color from red to blue
 	-- process to draw ball current pixel address is covered by ball position
 	bdraw : PROCESS (ball_x, ball_y, pixel_row, pixel_col) IS
 	BEGIN
