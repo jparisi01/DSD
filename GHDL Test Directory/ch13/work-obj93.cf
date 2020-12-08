@@ -1,7 +1,0 @@
-v 4
-file . "ch13_4_tb.vhdl" "99682e7f3e8154fb1a1376783aa1f01dd60f4741" "20201010161500.463":
-  entity ch13_4_tb at 3( 27) + 0 on 13;
-  architecture behavior of ch13_4_tb at 9( 113) + 0 on 14;
-file . "ch13_4.vhdl" "186502b43186a7ec1f27ef63df1d24fb1155a090" "20201010161500.432":
-  entity count_8b at 6( 244) + 0 on 11;
-  architecture my_count of count_8b at 18( 496) + 0 on 12;
